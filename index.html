@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+
+<section class="gameBody">
+
+<!-- score and title chart -->
+
+<div class="topDiv container">
+  <div class="row">
+
+    <div class="col-lg-6 col=md-3 col-sm-3">
+      <img src="images/logo.svg" class="logoImage">
+    </div>
+    <div class="score col-lg-2 col-md-3 col-sm-3">
+      score <br>
+      <h1 class="scoreFont">0</h1>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- rock, paper, scissors display -->
+
+<div id="mainDiv">
+<div class="container game backgroundDiv">
+  <div class="row backgroundDiv">
+    <div class="col gameCol1">
+      <button type="button" name="button" class="p buttons"><img src="images\icon-paper.svg" class="buttonImage"></button>
+    </div>
+    <div class="col gameCol2">
+      <button type="button" name="button" class="s buttons"><img src="images\icon-scissors.svg" class="buttonImage"></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col gameColBottom1">
+
+    </div>
+    <div class="col gameCol3">
+      <button type="button" name="button" class="r buttons"><img src="images\icon-rock.svg" class="buttonImage"></button>
+    </div>
+    <div class="col gameColBottom2">
+
+    </div>
+  </div>
+
+
+
+  <button type="button" name="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">rules</button>
+
+  <!-- rules pop-up  -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>rules</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="images/image-rules.svg" class="modalImage">
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+</section>
+
+<!-- credits -->
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Hannah Strakna</a>.
+</div>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="" src="index.js">
+
+  </script>
+
+</body>
+</html>
